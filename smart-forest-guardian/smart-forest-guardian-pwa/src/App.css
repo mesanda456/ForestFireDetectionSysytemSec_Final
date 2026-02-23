@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #0f172a, #111827);
+  color: white;
+}
+
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #14532D;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.card {
+  background: #1E293B;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.navbar {
+  background: #1E293B;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

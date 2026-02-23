@@ -1,0 +1,25 @@
+[debug] [2026-02-23T10:23:25.177Z] ----------------------------------------------------------------------
+[debug] [2026-02-23T10:23:25.178Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mesan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-02-23T10:23:25.179Z] CLI Version:   15.7.0
+[debug] [2026-02-23T10:23:25.179Z] Platform:      win32
+[debug] [2026-02-23T10:23:25.179Z] Node Version:  v24.13.1
+[debug] [2026-02-23T10:23:25.179Z] Time:          Mon Feb 23 2026 15:53:25 GMT+0530 (India Standard Time)
+[debug] [2026-02-23T10:23:25.179Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\mesan\OneDrive\Desktop\final_second_year\ForestFireDetectionSysytemSec_Final\smart-forest-guardian\smart-forest-guardian-pwa
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
