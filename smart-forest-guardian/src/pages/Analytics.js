@@ -1,9 +1,9 @@
 function Analytics() {
   return (
     <div>
-      <h2>Environmental Analytics</h2>
+      <h2>Analytics</h2>
       <div className="card">
-        Machine Learning Prediction Charts Here
+        Charts will be added here later
       </div>
     </div>
   );

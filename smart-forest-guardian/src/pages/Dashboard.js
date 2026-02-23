@@ -1,28 +1,29 @@
-import SeverityCard from "../components/SeverityCard";
-import SensorCard from "../components/SensorCard";
-import AlertTable from "../components/AlertTable";
+import { useEffect, useState } from "react";
+import { ref, onValue } from "firebase/database";
+import { database } from "../firebase";
 
 function Dashboard() {
+  const [zone, setZone] = useState({});
+
+  useEffect(() => {
+    const zoneRef = ref(database, "zones/zone1");
+
+    onValue(zoneRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) setZone(data);
+    });
+  }, []);
+
   return (
     <div>
-      <h2>Dashboard Overview</h2>
+      <h2>Dashboard</h2>
 
-      {/* Severity Section */}
-      <div style={{display: "flex"}}>
-        <SeverityCard level="LOW" count="2" color="green" />
-        <SeverityCard level="MEDIUM" count="1" color="orange" />
-        <SeverityCard level="HIGH" count="0" color="red" />
+      <div className="card">
+        <h3>Temperature: {zone.temperature}</h3>
+        <h3>Humidity: {zone.humidity}</h3>
+        <h3>Gas: {zone.gas}</h3>
+        <h3>Severity: {zone.severity}</h3>
       </div>
-
-      {/* Sensor Section */}
-      <div style={{display: "flex"}}>
-        <SensorCard title="Temperature" value="45" unit="°C" />
-        <SensorCard title="Humidity" value="30" unit="%" />
-        <SensorCard title="Gas Level" value="320" unit="ppm" />
-      </div>
-
-      {/* Alerts */}
-      <AlertTable />
     </div>
   );
 }
